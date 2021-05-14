@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    padding: 95px 10px 0;
+    border-top: 0.5px solid rgb(243, 240, 240);
+    border-bottom: 0.5px solid rgb(243, 240, 240);
+    justify-content: center;
+
+    /*Resonsive Tab and Mobile view*/
+    @media only screen and (max-width: 850px) {
+        padding-top: 144px;
+        h2 {
+            padding-bottom: 8px !important;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.navbarItem {
+    &.selected {
+        border-bottom: 2px solid #E11624; 
+        h2 {
+            color: #000;
+        }
+    }
+    margin: 0 20px;
+    h2 {
+        font-size: 12px;
+        font-weight: 500;
+        color: gray;
+        padding: 10px 0 20px;
+    }
+    
+}

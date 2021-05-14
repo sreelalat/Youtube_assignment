@@ -1,0 +1,48 @@
+.videos {
+    padding: 10px;
+    display: flex;
+    border-bottom: 0.5px solid rgb(243, 240, 240);
+    /*Resonsive Tab and Mobile view*/
+    @media only screen and (max-width: 850px) {
+        flex-direction: column;
+    }
+    .videos_main {
+        display: flex;
+        /*Resonsive Tab and Mobile view*/
+        @media only screen and (max-width: 640px) {
+            flex-direction: column;
+        }
+        .videocard_main {
+            h3 {
+                font-size: 25px;
+            }
+            .video_footer {
+                display: flex;
+                .channel {
+                    margin-right: 10px;
+                }
+            }
+            //Except mobile and tab view
+            @media only screen and (min-width: 850px) {
+                width: 35%;
+            }
+            flex: 1;
+        }
+    }
+    .videos_suggestions {
+        display: grid;
+        grid-template-columns: auto auto;
+        @media only screen and (min-width: 850px) {
+            width: 35%;
+        }
+        h3 {
+            font-size: 13px;
+        }
+        p{
+            font-size: 9px;
+        }
+        .videocard_suggestions {
+            width: 100%;
+        }
+    }
+}
